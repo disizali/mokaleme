@@ -11,10 +11,11 @@ export class index extends Component {
     const slides = await api.getSlides();
     const settings = await api.getSettings();
     const teachers = await api.getTeachers();
-    return { slides, settings };
+    const courses = await api.getCourses();
+    return { slides, settings, courses };
   }
   render() {
-    const { slides, settings } = this.props;
+    const { slides, settings, courses, teachers } = this.props;
     return (
       <Layout settings={settings}>
         <Head>
@@ -22,7 +23,7 @@ export class index extends Component {
         </Head>
         <Slider slides={slides} />
         <Welcome />
-        <Courses />
+        <Courses courses={courses} />
       </Layout>
     );
   }
