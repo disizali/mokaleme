@@ -1,0 +1,15 @@
+@import "../public/fonts/scss/fontawesome.scss";
+@import "../public/fonts/scss/regular.scss";
+@import "../public/fonts/scss/solid.scss";
+@import "../public/fonts/scss/brands.scss";
+@import "../public/fonts/scss/regular.scss";
+@import "../public/fonts/scss/light.scss";
+
+@font-face {
+  font-family: "Samim";
+  src: url("../public/fonts/Samim.woff2") format("woff2");
+}
+
+* {
+  font-family: "Samim";
+}

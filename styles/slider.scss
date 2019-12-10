@@ -1,0 +1,49 @@
+.slider {
+  position: relative;
+  > h1 {
+    position: absolute;
+    top: 10%;
+    height: 30%;
+    color: $fifthColor;
+    right: 10%;
+    font-size: 2.5rem;
+}
+> p {
+    position: absolute;
+    top: 40%;
+    height: 20%;
+    color: $fifthColor;
+    right: 10%;
+    font-size: 1.5rem;
+}
+  > .slider-link {
+    position: absolute;
+    right: 10%;
+    bottom: 20%;
+    height: 20%;
+    position: absolute;
+    a {
+      border-radius: 20px;
+      border: 1px solid $secondColor;
+      text-decoration: none;
+      transition-property: background-color, color;
+      transition-duration: 0.5s;
+      &:hover {
+        background-color: transparent;
+        color: $secondColor;
+      }
+    }
+  }
+  > .slider-buttons {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 15%;
+    > div {
+      background-color: rgba($mainColor, 0.6);
+      border: none;
+      margin: 0 0.5px;
+    }
+  }
+}

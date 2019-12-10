@@ -1,0 +1,39 @@
+// palette : https://flatuicolors.com/palette/defo
+
+$mainColor: #3498db;
+$secondColor: #f1c40f;
+$thirdColor: #f39c12;
+$fourthColor: #2c3e50;
+$fifthColor : #ecf0f1;
+
+.text-main {
+    color: $mainColor;
+}
+.text-second {
+    color: $secondColor;
+}
+.text-third {
+    color: $thirdColor;
+}
+.text-fourth {
+    color: $fourthColor;
+}
+.text-fifth {
+    color: $fifthColor;
+}
+
+.bg-main {
+    background-color: $mainColor;
+}
+.bg-second {
+    background-color: $secondColor;
+}
+.bg-third {
+    background-color: $thirdColor;
+}
+.bg-fourth {
+    background-color: $fourthColor;
+}
+.bg-fifth {
+    background-color: $fifthColor;
+}

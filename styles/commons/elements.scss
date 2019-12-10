@@ -1,0 +1,15 @@
+.button-warning {
+  transition-duration: 0.5s;
+  transition-property: background-color, color;
+  background-color: $secondColor;
+  color: $fourthColor;
+  font-size: 0.8rem;
+  border: 1px solid $secondColor;
+  &:hover {
+    color: $secondColor;
+    background-color: $fourthColor;
+  }
+  &:focus {
+    outline: none;
+  }
+}

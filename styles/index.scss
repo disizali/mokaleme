@@ -1,0 +1,17 @@
+@import "~bootstrap/scss/bootstrap.scss";
+@import "commons/index";
+@import "fonts";
+
+@import "info-bar";
+@import "navbar";
+@import "slider";
+@import "welcome";
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.rtl {
+  direction: rtl;
+}
