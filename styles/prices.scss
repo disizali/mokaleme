@@ -1,0 +1,41 @@
+.prices-list {
+  background-color: rgb(50, 50, 50);
+  .col {
+    padding: 50px 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    div {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+      h2,
+      p {
+        margin: 5px 0;
+      }
+      h2 {
+        font-size: 1rem;
+      }
+      p {
+        font-size: 0.8rem;
+      }
+    }
+    i {
+      font-size: 5rem;
+    }
+  }
+  .col:first-child(),
+  .col:nth-child(2) {
+    &::after {
+      position: absolute;
+      content: "";
+      width: 1px;
+      height: 90%;
+      top: 5%;
+      right: 0;
+      background: gold;
+    }
+  }
+}

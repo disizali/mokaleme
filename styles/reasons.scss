@@ -1,0 +1,30 @@
+.reasons {
+  background-color: rgb(240, 240, 240);
+  .row .col {
+    margin: 1rem;
+    background-color: white;
+    border-radius: 5px;
+    border-bottom: 3px solid $fourthColor;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    h3 {
+      position: relative;
+      font-size: 1.1em;
+      margin-bottom: 10px;
+      &::after {
+        content: "";
+        position: absolute;
+        right: 0;
+        height: 3px;
+        width: 10%;
+        background-color: rgba($mainColor, 0.8);
+        bottom: -5px;
+        border-radius: 5px 0 5px 0;
+      }
+    }
+    p {
+      font-size: 0.8rem;
+      font-weight: lighter;
+      color: rgba(0, 0, 0, 0.8);
+    }
+  }
+}
