@@ -1,0 +1,23 @@
+footer {
+  > div {
+    background-color: $fourthColor;
+    h3 {
+      color: white;
+      font-size: 1.1rem;
+    }
+    p,
+    span,
+    li {
+      font-size: 0.9rem;
+      color: rgba(245, 245, 245, 0.7);
+    }
+    div:nth-child(4) {
+      img {
+        background-color: white;
+        border-radius: 5px;
+        padding: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+      }
+    }
+  }
+}

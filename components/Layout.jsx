@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import "../styles/index.scss";
 import Navbar from "./Navbar";
 import Head from "next/head";
+import Footer from "./Footer";
 
 export class Layout extends Component {
   constructor(props) {
@@ -38,6 +39,7 @@ export class Layout extends Component {
         </Head>
         <Navbar />
         {this.props.children}
+        <Footer />
       </main>
     );
   }
