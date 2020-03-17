@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Container, Card } from "reactstrap";
-
+import Link from "next/link";
 export class Courses extends Component {
   constructor(props) {
     super(props);
@@ -14,14 +14,20 @@ export class Courses extends Component {
           <h2 className="mb-5 text-fourth">دوره ها</h2>
           <div className="mt-5">
             <ul className="d-flex">
-              {courses.map(course => {
+              {courses.map((course, index) => {
                 return (
-                  <li className="mx-2">
-                    <img src={course.cover} alt={course.title} />
-                    <div>
-                      <h3>{course.title}</h3>
-                      <p>{course.body}</p>
-                    </div>
+                  <li className="mx-2" key={index}>
+                    <Link href={`/${encodeURI(course.title)}`}>
+                      <a href={`/${encodeURI(course.title)}`}>
+                        <div className="cover">
+                          <img src={course.cover} alt={course.title} />
+                        </div>
+                        <div>
+                          <h3>{course.title}</h3>
+                          <p>{course.body}</p>
+                        </div>
+                      </a>
+                    </Link>
                   </li>
                 );
               })}

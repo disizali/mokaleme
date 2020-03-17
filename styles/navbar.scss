@@ -32,3 +32,11 @@ nav {
     }
   }
 }
+
+[role="menuitem"] {
+  color: white;
+  transition-duration: 0.3s;
+  &:hover {
+    color: black;
+  }
+}

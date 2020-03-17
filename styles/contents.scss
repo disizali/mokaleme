@@ -1,0 +1,31 @@
+.content-list {
+  > div {
+    background-color: rgb(230, 230, 230);
+    transition-property: background-color, cursor;
+    transition-duration: 0.3s;
+    padding: 10px;
+    color: rgb(30, 30, 30);
+    &:hover {
+      background-color: rgb(200, 200, 200);
+      cursor: pointer;
+    }
+    > h2 {
+      font-size: 1rem;
+    }
+    .content-body {
+      &.collapsed {
+        max-height: 0;
+        padding: 0;
+      }
+      &.opened {
+        max-height: 100em;
+        padding: 10px;
+      }
+      border-radius: 5px;
+      background-color: white;
+      overflow: hidden;
+      transition-property: max-height, padding;
+      transition-duration: 0.5s;
+    }
+  }
+}

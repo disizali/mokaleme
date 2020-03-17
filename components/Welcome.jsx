@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import Link from "next/link";
 
 export default class Welcome extends Component {
   render() {
@@ -9,7 +10,9 @@ export default class Welcome extends Component {
           alt="welcome image"
         />
         <div className="d-flex flex-column justify-content-center align-items-start">
-          <h1 className="text-main text-right w-100 my-3">به سایت ما خوش آمدید</h1>
+          <h1 className="text-main text-right w-100 my-3">
+            به سایت ما خوش آمدید
+          </h1>
           <p className="text-fourth text-justify w-75 my-3">
             لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
             استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در
@@ -23,7 +26,13 @@ export default class Welcome extends Component {
             دستاوردهای اصلی و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا
             مورد استفاده قرار گیرد.
           </p>
-          <button className="button-warning my-3 py-3 px-5"> ادامه مطلب </button>
+          <Link href="/blog/مقاله خوش آمد گویی">
+            <a>
+              <button className="button-warning my-3 py-3 px-5">
+                ادامه مطلب
+              </button>
+            </a>
+          </Link>
         </div>
       </section>
     );

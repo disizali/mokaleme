@@ -27,28 +27,26 @@ export default class NavbarComponent extends Component {
     this.setState({ isOpen: !this.state.isOpen });
   }
   render() {
-    const {isOpen} = this.state;
+    const { isOpen } = this.state;
     return (
       <div>
         <InfoBar />
         <Navbar expand="md" className="rtl bg-fifth text-fourth">
           <Container>
-            <Link href="/">
-              <NavbarBrand href="/">
-                <img
-                  src={require("../public/images/logo.png")}
-                  alt="mokaleme online"
-                  className="ml-2"
-                />
-                <h1 className="ml-2">مکالمه آنلاین</h1>
-              </NavbarBrand>
-            </Link>
+            <NavbarBrand href="/">
+              <img
+                src={require("../public/images/logo.png")}
+                alt="mokaleme online"
+                className="ml-2"
+              />
+              <h1 className="ml-2">مکالمه آنلاین</h1>
+            </NavbarBrand>
             <NavbarToggler onClick={this.toggle} />
             <Collapse isOpen={isOpen} navbar>
               <Nav className="ml-auto" navbar>
                 <NavItem>
-                  <Link href="#">
-                    <NavLink href="#">صفحه اصلی</NavLink>
+                  <Link href="/">
+                    <NavLink href="/">صفحه اصلی</NavLink>
                   </Link>
                 </NavItem>
                 <UncontrolledDropdown nav inNavbar>
@@ -56,16 +54,35 @@ export default class NavbarComponent extends Component {
                     منو
                   </DropdownToggle>
                   <DropdownMenu right className="bg-fourth text-second">
-                    <DropdownItem className="text-right">
-                      زیر منو شماره ۱
-                    </DropdownItem>
-                    <DropdownItem className="text-right">
-                      زیر منو شماره ۲
-                    </DropdownItem>
+                  <Link href={`/blog`}>
+                      <a className="bg-transparent">
+                        <DropdownItem className="text-right">
+                        وبلاگ
+                        </DropdownItem>
+                      </a>
+                    </Link>
                     <DropdownItem divider />
-                    <DropdownItem className="text-right">
-                      زیر منو شماره ۳
-                    </DropdownItem>
+                    <Link href={`/کودکان`}>
+                      <a>
+                        <DropdownItem className="text-right">
+                          کودکان
+                        </DropdownItem>
+                      </a>
+                    </Link>
+                    <Link href={`/نوجوانان`}>
+                      <a>
+                        <DropdownItem className="text-right">
+                          نوجوانان
+                        </DropdownItem>
+                      </a>
+                    </Link>
+                    <Link href={`/بزرگسالان`}>
+                      <a>
+                        <DropdownItem className="text-right">
+                          بزرگسالان
+                        </DropdownItem>
+                      </a>
+                    </Link>
                   </DropdownMenu>
                 </UncontrolledDropdown>
               </Nav>

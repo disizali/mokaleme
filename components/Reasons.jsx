@@ -1,6 +1,5 @@
 import React from "react";
 import { Row, Col } from "reactstrap";
-
 export default function Reasons() {
   return (
     <div className="py-5 d-flex flex-column justify-content-center align-items-center w-100 reasons">
