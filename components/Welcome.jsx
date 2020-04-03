@@ -8,12 +8,13 @@ export default class Welcome extends Component {
         <img
           src={require("../public/images/welcome.jpg")}
           alt="welcome image"
+          className="d-none d-md-inline-block"
         />
-        <div className="d-flex flex-column justify-content-center align-items-start">
+        <div className="d-flex flex-column justify-content-center align-items-start p-2 p-md-0">
           <h1 className="text-main text-right w-100 my-3">
             به سایت ما خوش آمدید
           </h1>
-          <p className="text-fourth text-justify w-75 my-3">
+          <p className="text-fourth text-justify w-100  w-md-75 my-3 px-2 px-md-0">
             لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
             استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در
             ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و

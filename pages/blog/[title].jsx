@@ -14,7 +14,7 @@ export class index extends Component {
     return (
       <Layout settings={settings}>
         <div className="p-1 m-1 p-md-5 m-md-5 rtl text-right">
-          <img src={post.cover} className="w-50" alt={post.title} />
+          <img src={post.cover} className="w-50 rounded" alt={post.title} />
           <hr />
           <h1>{post.title}</h1>
           <div dangerouslySetInnerHTML={{ __html: post.body }} />

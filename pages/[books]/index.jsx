@@ -12,13 +12,17 @@ export class books extends Component {
   }
   render() {
     const { books, settings } = this.props;
-    console.log(books);
     return (
       <Layout settings={settings}>
-        <Row className="books-list m-0 p-5">
-          {books.map((item, index) => {
+        <Row className="books-list m-0 p-5 rtl">
+          {books.length == 0 && (
+            <div className="my-4 py-4 h-100">
+            <h3 className="text-center h-100 my-5 py-5">در این درسته بندی کتابی قرار نگرفته است</h3>
+            </div>
+          )}
+          {books.length > 0 && books.map((item, index) => {
             return (
-              <Col key={index} sm={13} md={3}>
+              <Col key={index} sm={13} md={3} className="book-container">
                 <Link href={`/book/${item.name}`}>
                   <a>
                     <img src={item.image} />

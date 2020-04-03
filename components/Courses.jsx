@@ -13,10 +13,10 @@ export class Courses extends Component {
         <Container>
           <h2 className="mb-5 text-fourth">دوره ها</h2>
           <div className="mt-5">
-            <ul className="d-flex">
+            <ul className="d-flex flex-column flex-md-row">
               {courses.map((course, index) => {
                 return (
-                  <li className="mx-2" key={index}>
+                  <li className="mx-0 mx-md-2 my-2 my-md-0" key={index}>
                     <Link href={`/${encodeURI(course.title)}`}>
                       <a href={`/${encodeURI(course.title)}`}>
                         <div className="cover">

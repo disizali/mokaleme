@@ -7,7 +7,7 @@ export class Footer extends Component {
     return (
       <footer>
         <Row className="rtl text-right p-3 align-items-center">
-          <Col>
+          <Col sm={12} md={3}>
             <h3>مکالمه آنلاین</h3>
             <p className="text-justify">
               لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با
@@ -15,7 +15,7 @@ export class Footer extends Component {
               در ستون و سطرآنچنان که لازم است.
             </p>
           </Col>
-          <Col>
+          <Col sm={12} md={3}>
             <h3>منوی وب سایت</h3>
             <ul>
               <li>
@@ -48,7 +48,7 @@ export class Footer extends Component {
               </li>
             </ul>
           </Col>
-          <Col>
+          <Col sm={12} md={3}>
             <h3>تماس با ما</h3>
             <ul>
               <li>شماره تماس :99999-021</li>
@@ -56,7 +56,7 @@ export class Footer extends Component {
               <li>آدرس : محل دقیق شرکت</li>
             </ul>
           </Col>
-          <Col>
+          <Col sm={12} md={3}>
             <img
               src={`/images/enamad-logo.png`}
               alt="enamad logo"

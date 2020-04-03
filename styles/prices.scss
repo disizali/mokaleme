@@ -1,6 +1,6 @@
 .prices-list {
   background-color: rgb(50, 50, 50);
-  .col {
+  > div {
     padding: 50px 0;
     display: flex;
     justify-content: space-around;
@@ -26,8 +26,8 @@
       font-size: 5rem;
     }
   }
-  .col:first-child(),
-  .col:nth-child(2) {
+  > div:first-child(),
+  > div:nth-child(2) {
     &::after {
       position: absolute;
       content: "";

@@ -14,7 +14,7 @@ export class Slider extends Component {
         <h1 className="d-flex justify-content-center align-items-end pb-0 pb-md-3">
           {slides[0].title}
         </h1>
-        <p className="d-flex justify-content-center align-items-start pt-0 pt-md-3">
+        <p className="d-none d-md-flex justify-content-center align-items-start pt-0 pt-md-3">
           {slides[0].body}
         </p>
         <div className="slider-link d-flex justify-content-center align-items-center">
@@ -22,7 +22,7 @@ export class Slider extends Component {
             <a className="py-3 px-5 bg-second text-fourth rounded">ادامه مطلب</a>
           </Link>
         </div>
-        <div className="slider-buttons d-flex justify-content-center align-items-center text-right text-light">
+        <div className="slider-buttons justify-content-center align-items-center text-right text-light d-none d-md-flex">
           <div className="h-100 w-25 d-flex justify-content-around align-items-center p-2">
             <div className="d-flex flex-column">
               <h2>اساتید مجرب</h2>

@@ -26,8 +26,8 @@ export default class book extends Component {
     const { tab } = this.state;
     return (
       <Layout settings={settings}>
-        <h1>{book.name}</h1>
-        <ul className="content-list">
+        <h1 className="ml-5">{book.name}</h1>
+        <ul className="content-list m-5">
           {contents.map((item, index) => {
             return (
               <div key={index} onClick={() => this.selectTab(item.id)}>
